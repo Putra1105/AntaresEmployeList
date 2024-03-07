@@ -34,7 +34,7 @@
         <img src="HRD_LOGO.png" alt="HRD ANTARES" width="200" height="200">
         <br>
         <br>
-        <h2> Website Khusus HRD Check Blacklist</h2>
+        <h2> Website Khusus HRD Check Employe </h2>
 </center>
 
 <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Cari data">
@@ -44,13 +44,120 @@
         <th>No.</th>
         <th>UCP</th>
         <th>Nama IC</th>
-        <th>Divisi</th>
+        <th>Forum</th>
+        <th>Divisi/Jabatan</th>
     </tr>
     <tr>
-        <td></td>
-        <td>Sanetan</td>
-        <td>Dominguez Martinez</td>
-        <td>Head Marketing</td>
+        <td>1</td>
+        <td>nikoandrianto</td>
+        <td>Dominico Villopoto</td>
+        <td>ENCO</td>
+        <td>Commissioner/Founder</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>ihzafikri</td>
+        <td>Benicio Devoto</td>
+        <td>Myst1q</td>
+        <td>COO</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Putra1105</td>
+        <td>Jupri Dery</td>
+        <td>OcktoBer</td>
+        <td>HRD/Secretary Finance</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Takuya</td>
+        <td>Taku Uya</td>
+        <td>KingzdE</td>
+        <td>Head Rental</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>yushleeh</td>
+        <td>Armando Dacian</td>
+        <td>Yushlih</td>
+        <td>Public Relation</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>ammardavy</td>
+        <td>Michael Stones</td>
+        <td>Ammar Davy</td>
+        <td>HRD/Supervisor Finance</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Jftmmat</td>
+        <td>Louis Edward</td>
+        <td>ripalnurhidayat</td>
+        <td>Head Builder</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Lenkakim</td>
+        <td>Adelaine Fleur</td>
+        <td>drdin</td>
+        <td>Public Relation</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>dekkiboo</td>
+        <td>Fabio Nicolas</td>
+        <td>dekkiboo</td>
+        <td>Vice CEO</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>yusufwijaya</td>
+        <td>James Ackerly</td>
+        <td>Rocketnasa</td>
+        <td>HRD/Assistant CFO</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>BeniBenz</td>
+        <td>Mark Viceant</td>
+        <td>Aploizy</td>
+        <td>HRD</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>YobPerdana</td>
+        <td>Tyrese Ingram</td>
+        <td>SwipaTheYob</td>
+        <td>Internal Affairs</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>babongaming</td>
+        <td>Jordi Pola</td>
+        <td>Seafarer</td>
+        <td>Head Automotive</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>aavvynn</td>
+        <td>Alicia Castarica</td>
+        <td>aavvynn</td>
+        <td>HRD</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>Arapyy</td>
+        <td>Rapy Dareen</td>
+        <td>Alravi adyatama</td>
+        <td>HRD</td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>raysusandi</td>
+        <td>Gerd Rauschenberg</td>
+        <td>Alberttt</td>
+        <td>CFO</td>
     </tr>
 </table>
 
@@ -69,7 +176,7 @@ function filterTable() {
     tr = table.getElementsByTagName("tr");
 
     for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[1]; // Ubah angka untuk memfilter kolom lain
+        td = tr[i].getElementsByTagName("td"); // Ubah angka untuk memfilter kolom lain
         if (td) {
             txtValue = td.textContent || td.innerText;
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
